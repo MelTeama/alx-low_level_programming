@@ -5,11 +5,7 @@
  */
 
 int add(int x,  int y)
-
 {
-	
-	_putchar(x + y);
-	
-	return (0);
+	return (x + y);
 
 }
