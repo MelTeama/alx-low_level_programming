@@ -7,12 +7,9 @@
 int add(int x,  int y)
 
 {
-
-
-		{
-		_putchar(x + y);
-		}
-
-	_putchar('\n');
+	
+	_putchar(x + y);
+	
+	return (0);
 
 }
