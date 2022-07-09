@@ -13,7 +13,7 @@ if (n > 0)
 {
 for (i = 0; i < n; i++)
 {
-for (b = 0; b < 1; b++)
+for (b = 0; b < i; b++)
 {
 _putchar (' ');
 }
