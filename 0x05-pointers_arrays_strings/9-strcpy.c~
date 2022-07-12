@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strcpy -   function that copies the string pointed to by src
+ * _strcpy -   function that copies the string pointed
  * @dest: pointer to array
- * @scr: a copia
+ * @src: a copia
  * Return: copy to be returned
  */
 
