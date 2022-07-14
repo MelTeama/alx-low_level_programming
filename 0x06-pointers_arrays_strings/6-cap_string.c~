@@ -2,7 +2,7 @@
 
 /**
  * cap_string - a function that capitalizes all words of a string
- * @str: string
+ * @str: string to capitalize
  * Return: return a string
  */
 
@@ -27,7 +27,7 @@ str[index - 1] == '(' ||
 str[index - 1] == ')' ||
 str[index - 1] == '{' ||
 str[index - 1] == '}')
-str[index] -= 32;
+str[index] == 32;
 }
 return (str);
 }
