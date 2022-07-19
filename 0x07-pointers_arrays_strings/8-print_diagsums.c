@@ -1,44 +1,29 @@
 #include "main.h"
 
 /**
- * rot13 - a function that encodes a string using rot13
- * @str: string
- * Return: return a encoded string
+ * print_diagsums - prints the sum of the two diagonals of a square matrix
+ * @a: pointer
+ * @size: size of array
+ * Return: return void
  */
 
-char *rot13(char *)
+void print_diagsums(int *a, int size)
 
 {
-int index1, index2;
+int i, s1;
+unsigned int sd1, sd2;
+s1 = 0;
+sd1 = 0;
+sd2 = 0;
 
-char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
-'G', 'H', 'I', 'J', 'K', 'L',
-'M', 'N', 'O', 'P', 'Q', 'R',
-'S', 'T', 'U', 'V', 'W', 'X',
-'Y', 'Z', 'a', 'b', 'c', 'd',
-'e', 'f', 'g', 'h', 'i', 'j',
-'k', 'l', 'm', 'n', 'o', 'p',
-'q', 'r', 's', 't', 'u', 'v',
-'w', 'x', 'y', 'z'};
-char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
-'T', 'U', 'V', 'W', 'X', 'Y',
-'Z', 'a', 'b', 'c', 'd', 'E', 
-'F', 'G', 'H', 'I', 'J', 'K', 
-'L', 'M', 'n', 'o', 'P', 'q',
-'r', 's', 't', 'u', 'v', 'w',
-'x', 'y', 'z', 'a', 'b', 'c',
-'d', 'e', 'f', 'g', 'h', 'i',
-'j', 'k', 'l', 'm'};
-while (str[++index1])
+s1 = (size * size) - 1;
+for (i = 0; i <= s1; i = i + (size + 1))
 {
-for (index2 = 0; index2 < 52; index2++)
+sd1 = sd1 + a[i];
+}
+for (i = (size - 1); i < s1; i = i + (size - 1))
 {
-if (str[index1] == alphabet[index2])
-{
-str[index1] = rot13key[index2];
-break;
+sd2 = sd2 + a[i];
 }
-}
-}
-return (str);
+printf("%d, %d\n", sd1, sd2);
 }

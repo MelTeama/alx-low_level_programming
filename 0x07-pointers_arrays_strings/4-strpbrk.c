@@ -1,21 +1,30 @@
 #include "main.h"
 
 /**
- * reverse_array - a function that reverses the content of an array
- * @a: an integer one defined
- * @n: a integer two defined
- * Return: return pointer to @dest
+ * _strpbrk - print consecutive character
+ * @s: string source
+ * @accept: search string
+ * Return: return new string
  */
 
-void reverse_array(int *a, int n)
+char *_strpbrk(char *s, char *accept)
 
 {
-int tmp, index;
+unsigned int i, j;
 
-for (index = n - 1; index > n / 2; index--)
+for (i = 0; *(s + i); i++)
 {
-tmp = a[n - 1 - index];
-a[n - 1 - index] = a[index];
-a[index] = tmp;
+for (j = 0; *(accept + j); j++)
+{
+if (*(s + j) == *(accept + j))
+{
+break;
 }
+}
+if (*(accept + j) != '\0')
+{
+return (s + i);
+}
+}
+return (0);
 }

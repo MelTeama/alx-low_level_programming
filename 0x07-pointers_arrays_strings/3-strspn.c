@@ -1,38 +1,26 @@
 #include "main.h"
 
 /**
- * _strcmp - a function that copies a string
- * @s1: a character one defined
- * @s2: a character two defined
- * Return: return pointer to @dest
+ * _strspn - print consecutive character
+ * @s: string source
+ * @accept: search string
+ * Return: return new string
  */
 
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept);
 
 {
-int i = 0, diff = 0;
+unsigned int i, j;
 
-while (1)
+for (j = 0; *(s + j); j++)
 {
-if (s1[i] == '\0' && s2[i] == '\0')
-break;
-else if (s1[i] == '\0')
+for (i = 0; *(accept + i); i++)
 {
-diff = s2[i];
+if (*(s + j) == *(accept + i))
 break;
 }
-else if (s2[i] == '\0')
-{
-diff = s1[i];
+if (*(accept + i) == '\0')
 break;
 }
-else if (s1[i] != s2[i])
-{
-diff = s1[i] - s2[i];
-break;
-}
-else
-i++;
-}
-return (diff);
+return (j);
 }

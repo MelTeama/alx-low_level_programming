@@ -1,20 +1,29 @@
 #include "main.h"
 
 /**
- * string_toupper - reverses the content of an array of integers
- * @str: parameter
- * Return: return a character
+ * _strstr - finds the first occurrence of the substring
+ * @haystack: main s
+ * @needle: search in haystack
+ * Return: return new string
  */
 
-char *string_toupper(char *str)
+char *_strstr(char *haystack, char *needle)
 
 {
-int index = 0;
+char *s1, *s2;
 
-while (str[index++])
+while (*haystack != '\0')
 {
-if (str[index] >= 'a' && str[index] <= 'z')
-str[index] -= 32;
+s1 = haystack;
+s2 = needle;
+while (*haystack != '\0' && *s2 != '\0' && *haystack == *s2)
+{
+haystack++;
+s2++
 }
-return (str);
+if (*s2 == '\0')
+return (s1);
+haystack = s1 + 1;
+}
+return (0);
 }

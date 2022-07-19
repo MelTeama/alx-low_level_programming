@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- * _strncat - a function that concatenates two strings
- * @dest: string type one
- * @src: string type two
- * @n: an integer entry
- * Return: return pointer to @dest
+ * _memcpy - fills memory
+ * @dest: string source
+ * @src: string for filling
+ * @n: length of buffer
+ * Return: return new string
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 
 {
-int index = 0, dest_len = 0;
-while (dest[index++])
-dest_len++;
-for (index = 0; src[index] && index < n; index++)
-dest[dest_len++] = src[index];
+unsigned int i = 0;
+while (i < n)
+{
+*(dest + i) = *(src + i);
+i++;
+}
 return (dest);
 }
