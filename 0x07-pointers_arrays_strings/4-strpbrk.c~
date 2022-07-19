@@ -17,7 +17,7 @@ for (i = 0; *(s + i); i++)
 {
 for (j = 0; *(accept + j); j++)
 {
-if (*(s + j) == *(accept + j))
+if (*(s + i) == *(accept + j))
 {
 break;
 }
