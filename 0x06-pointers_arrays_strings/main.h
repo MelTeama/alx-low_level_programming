@@ -9,6 +9,11 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
+<<<<<<< HEAD
 
 #endif
 
+=======
+char *rot13(char *);
+#endif
+>>>>>>> baf32b56bf400ff895a8d108f95d905037f620de

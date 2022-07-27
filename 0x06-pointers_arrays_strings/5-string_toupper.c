@@ -18,4 +18,7 @@ str[index] -= 32;
 }
 return (str);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> baf32b56bf400ff895a8d108f95d905037f620de

@@ -1,5 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
+<<<<<<< HEAD
+=======
+int _putchar(char c);
+>>>>>>> baf32b56bf400ff895a8d108f95d905037f620de
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);

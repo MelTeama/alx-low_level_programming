@@ -17,7 +17,11 @@ for (i = 0; *(s + i); i++)
 {
 for (j = 0; *(accept + j); j++)
 {
+<<<<<<< HEAD
 if (*(s + j) == *(accept + j))
+=======
+if (*(s + i) == *(accept + j))
+>>>>>>> baf32b56bf400ff895a8d108f95d905037f620de
 {
 break;
 }

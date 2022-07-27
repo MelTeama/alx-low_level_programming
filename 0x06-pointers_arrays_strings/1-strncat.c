@@ -18,4 +18,7 @@ for (index = 0; src[index] && index < n; index++)
 dest[dest_len++] = src[index];
 return (dest);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> baf32b56bf400ff895a8d108f95d905037f620de

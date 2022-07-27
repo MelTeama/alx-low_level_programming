@@ -19,4 +19,7 @@ a[n - 1 - index] = a[index];
 a[index] = tmp;
 }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> baf32b56bf400ff895a8d108f95d905037f620de
