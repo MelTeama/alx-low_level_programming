@@ -43,6 +43,7 @@ for (b = 0; b < width; b++)
 {
 p[a][b] = 0;
 }
+}
 return (p);
 }
 }
