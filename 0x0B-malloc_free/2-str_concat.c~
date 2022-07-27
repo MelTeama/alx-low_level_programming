@@ -41,7 +41,7 @@ j = 0;
 while (i <= size)
 {
 nstr[i] = s2[j];
-j++;
+i++;
 j++;
 }
 return (nstr);
