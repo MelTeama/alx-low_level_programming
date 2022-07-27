@@ -20,7 +20,8 @@ return (NULL);
 }
 else
 {
-p = (int **) malloc(height * sizeof(int *));
+p = (int **)malloc(height * sizeof(int *));
+/* a malloc per pointer */
 if (!p)
 {
 free(p);
