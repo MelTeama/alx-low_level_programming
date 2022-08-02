@@ -3,7 +3,6 @@
 
 /**
  * *new_dog - creates a new dog
- * @d: pointer to structure
  * @name: member one
  * @age: member two
  * @owner: member three
